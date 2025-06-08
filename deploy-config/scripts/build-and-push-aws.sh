@@ -10,7 +10,7 @@ echo "Building Docker Image..."
 ./docker-build-image.sh
 
 echo "Saving Docker Image as a TAR file..."
-docker image save tims-analytics-client:latest -o ../images/tims-analytics-client.tar
+docker image save coming-soon:latest -o ../images/coming-soon.tar
 
 echo "Copying TAR file to AWS..."
-scp -i ../secrets/tims-analytics-v2.pem ../images/tims-analytics-client.tar ec2-user@ec2-54-174-219-218.compute-1.amazonaws.com:~/temp/.
+scp -i ../secrets/tims-analytics-v2.pem ../images/coming-soon.tar ec2-user@ec2-54-174-219-218.compute-1.amazonaws.com:~/temp/.

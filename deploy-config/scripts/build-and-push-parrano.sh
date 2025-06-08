@@ -10,7 +10,7 @@ echo "Building Docker Image..."
 ./docker-build-image-parrano.sh
 
 echo "Saving Docker Image as a TAR file..."
-docker image save gate-drinks-client:latest -o ../images/gate-drinks-client.tar
+docker image save coming-soon-client:latest -o ../images/coming-soon-client.tar
 
 echo "Copying TAR file to Burrata..."
-scp -i ~/.ssh/id_ed25519_tim -P 23022 ../images/gate-drinks-client.tar tim@tqp.synology.me:/tmp/.
+scp -i ~/.ssh/id_ed25519_tim -P 23022 ../images/coming-soon-client.tar tim@tqp.synology.me:/tmp/.
